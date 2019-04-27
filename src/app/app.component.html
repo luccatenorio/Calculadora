@@ -1,0 +1,83 @@
+
+<h1>Calculadora </h1>
+<p>  </p>
+
+<form name="Calc"> 
+  <input  name ="input" type="text" size="13" [(ngModel)]=resultado>
+                       
+
+<table>
+        <tr>
+          <td>
+               <button onclick="Calc.input.value +=1" (click)="addUm()" (click)="addUm2()">1</button>
+          </td>
+         <td>
+               <button onclick="Calc.input.value +=2" (click)="addDois()" (click)="addDois2()">2</button>
+          </td>
+          <td>
+               <button onclick="Calc.input.value +=3" (click)="addTres()" (click)="addTres()">3</button>
+          </td>
+          <td>
+               <button onclick="Calc.input.value += '+'" (click)="opeMais()" >+</button>
+          </td>  
+
+
+
+
+        </tr>
+                <tr>
+          <td>
+               <button onclick="Calc.input.value +=4 " (click)="addQuatro()" (click)="addQuatro2()">4</button>
+          </td>
+         <td>
+               <button onclick="Calc.input.value +=5" (click)="addCinco()" (click)="addCinco2()">5</button>
+          </td>
+          <td>
+               <button onclick="Calc.input.value +=6" (click)="addSeis()" (click)="addSeis2()"  >6</button>
+          </td>  
+          <td>
+               <button onclick="Calc.input.value +='-'"  (click)="opeMenos()">-</button>
+          </td>
+
+
+
+
+        </tr>
+
+ <tr>
+          <td>
+               <button onclick="Calc.input.value +=7" (click)="addSete()" (click)="addSete2()">7</button>
+          </td>
+         <td>
+               <button onclick="Calc.input.value +=8" (click)="addOito()" (click)="addOito2()">8</button>
+          </td>
+          <td>
+               <button onclick="Calc.input.value +=9" (click)="addNove()" (click)="addNove()">9</button>
+          </td>  
+          <td>
+               <button onclick="Calc.input.value += '*'" (click)="opeMult()">*</button>
+          </td>
+
+
+
+        </tr>
+
+        <tr>
+          <td>
+               <button onclick="Calc.input.value +=0" (click)="addZero()" (click)="addZero2()">0</button>
+          </td>
+         <td>
+               <button onclick="Calc.input.value += '/'"  (click)="opeDiv()" > /</button>
+          </td>
+           <td>
+               <button  (click)="Calcular()"> =</button> 
+          </td>
+
+          <td>
+               <input type="reset" value="CE" > 
+          </td>
+
+
+</table>
+</form>
+
